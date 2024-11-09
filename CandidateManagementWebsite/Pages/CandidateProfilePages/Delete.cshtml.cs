@@ -49,7 +49,7 @@ namespace CandidateManagementWebsite.Pages.CandidateProfilePages
 
             if (candidateProfile != null)
             {
-                candidateProfileService.DeleteCandidateProfile(candidateProfile);
+                candidateProfileService.DeleteCandidateProfile(candidateProfile.CandidateId);
             }
 
             return RedirectToPage("./Index");

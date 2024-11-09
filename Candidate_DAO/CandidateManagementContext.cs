@@ -33,7 +33,6 @@ namespace Candidate_BusinessObjects
                 var connectionString = config.GetConnectionString("DbConnect");
                 optionsBuilder.UseSqlServer(connectionString);
             }
-            //optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
         }
 
         private String GetConnectionString()
